@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Pricing Cards</title>
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Ambient Glowing Backgrounds -->
+    <div class="bg-glow blob-1"></div>
+    <div class="bg-glow blob-2"></div>
+
+    <section class="pricing-container">
+        <!-- Header Section -->
+        <header class="pricing-header">
+            <span class="badge-pill">Flexible Plans</span>
+            <h2>Simple Pricing, Built to Scale</h2>
+            <p>Select the ideal plan for your project. Upgrade, downgrade, or cancel anytime.</p>
+
+            <!-- Billing Toggle Switch -->
+            <div class="billing-toggle-container">
+                <span class="toggle-label" id="monthly-label">Monthly</span>
+                <label class="switch-control" for="billingSwitch">
+                    <input type="checkbox" id="billingSwitch" aria-label="Toggle annual billing">
+                    <span class="slider-track"></span>
+                </label>
+                <span class="toggle-label" id="annual-label">
+                    Annually 
+                    <span class="save-tag">Save 20%</span>
+                </span>
+            </div>
+        </header>
+
+        <!-- Pricing Cards Grid -->
+        <div class="pricing-grid">
+            
+            <!-- Starter Plan -->
+            <div class="pricing-card">
+                <div class="card-header">
+                    <div class="icon-box"><i class="fa-solid fa-bolt"></i></div>
+                    <h3>Starter</h3>
+                    <p>Ideal for freelancers and side projects getting off the ground.</p>
+                </div>
+                <div class="price-display">
+                    <span class="currency">$</span>
+                    <span class="amount" data-monthly="12" data-annual="9">12</span>
+                    <span class="billing-period">/ month</span>
+                </div>
+                <ul class="feature-list">
+                    <li><i class="fa-solid fa-circle-check"></i> Up to 2 Projects</li>
+                    <li><i class="fa-solid fa-circle-check"></i> 5GB Cloud Storage</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Community Support</li>
+                    <li class="disabled"><i class="fa-solid fa-circle-xmark"></i> Custom Domain</li>
+                    <li class="disabled"><i class="fa-solid fa-circle-xmark"></i> Advanced Analytics</li>
+                </ul>
+                <button class="btn btn-secondary plan-btn" data-plan="Starter">Get Started</button>
+            </div>
+
+            <!-- Professional Plan (Featured) -->
+            <div class="pricing-card featured">
+                <div class="popular-tag"><i class="fa-solid fa-star"></i> Most Popular</div>
+                <div class="card-header">
+                    <div class="icon-box"><i class="fa-solid fa-gem"></i></div>
+                    <h3>Professional</h3>
+                    <p>Perfect for growing teams, creators, and scaling businesses.</p>
+                </div>
+                <div class="price-display">
+                    <span class="currency">$</span>
+                    <span class="amount" data-monthly="39" data-annual="29">39</span>
+                    <span class="billing-period">/ month</span>
+                </div>
+                <ul class="feature-list">
+                    <li><i class="fa-solid fa-circle-check"></i> Unlimited Projects</li>
+                    <li><i class="fa-solid fa-circle-check"></i> 100GB Cloud Storage</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Priority 24/7 Support</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Custom Domain Integration</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Advanced Team Analytics</li>
+                </ul>
+                <button class="btn btn-primary plan-btn" data-plan="Professional">Start 14-Day Free Trial</button>
+            </div>
+
+            <!-- Enterprise Plan -->
+            <div class="pricing-card">
+                <div class="card-header">
+                    <div class="icon-box"><i class="fa-solid fa-building-shield"></i></div>
+                    <h3>Enterprise</h3>
+                    <p>Dedicated infrastructure and support for large applications.</p>
+                </div>
+                <div class="price-display">
+                    <span class="currency">$</span>
+                    <span class="amount" data-monthly="99" data-annual="79">99</span>
+                    <span class="billing-period">/ month</span>
+                </div>
+                <ul class="feature-list">
+                    <li><i class="fa-solid fa-circle-check"></i> Custom Infrastructure</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Unlimited Cloud Storage</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Dedicated Account Manager</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Custom SLA & Guarantees</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Enterprise SSO & Audit Logs</li>
+                </ul>
+                <button class="btn btn-secondary plan-btn" data-plan="Enterprise">Contact Sales</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <i class="fa-solid fa-circle-check"></i>
+        <span id="toast-message">Plan selected!</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
