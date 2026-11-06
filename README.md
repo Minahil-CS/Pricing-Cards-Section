@@ -1,4 +1,4 @@
-### 💎 Modern Responsive Pricing Cards Section
+# 💎 Modern Responsive Pricing Cards Section
 
 A sleek, ultra-modern, and fully responsive Pricing Cards Section component built with pure HTML5, CSS3, and JavaScript. Features smooth price-toggling animations, ambient glassmorphism design, custom toast notifications, and full mobile-to-desktop responsiveness.
 
