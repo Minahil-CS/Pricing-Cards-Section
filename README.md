@@ -24,15 +24,16 @@ JavaScript (ES6+): Dynamic DOM updates, price switching logic, and event handlin
 
 FontAwesome: Scalable iconography.
 
-## 📁 File Structure
 
+## 📂 File Structure
+
+```text
 Pricing-Cards-Section/
-│
-├── index.html     # Main markup structure
-├── style.css      # Custom styles, theme variables & responsive grids
+├── index.html    # Main markup structure
+├── style.css     # Custom styles, theme variables & responsive grids
 ├── script.js     # Monthly/Annual billing toggle & toast logic
-└── README.md      # Project documentation
-
+└── README.md     # Project documentation
+```
 
 ## 🚀 Quick Start & Installation
 
@@ -48,6 +49,9 @@ cd Pricing-Cards-Section
 
 Open the project:
 Simply double-click index.html or open it with the Live Server extension in Visual Studio Code.
+
+## 🔗 Live Demo
+Check out the live website here: [https://minahil-cs.github.io/Pricing-Cards-Section/](https://minahil-cs.github.io/Pricing-Cards-Section/)
 
 ## 👤 Author
 
